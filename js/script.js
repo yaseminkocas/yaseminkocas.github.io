@@ -1,7 +1,6 @@
 
 const images = [
   { src: "img/Screenshot (10).png", caption: "11111" },
-  { src: "img/Screenshot (11).png", caption: "22222" },
   { src: "img/Screenshot (15).png", caption: "3333" },
 ];
 
