@@ -1,9 +1,8 @@
-/* Gallery item styles */
+/* Gallery item */
 .gallery-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
 .gallery-item img {
@@ -18,6 +17,7 @@
   transform: scale(1.05);
 }
 
+/* Caption on hover */
 .caption {
   position: absolute;
   bottom: 0;
@@ -34,7 +34,7 @@
   opacity: 1;
 }
 
-/* Lightbox styles */
+/* Lightbox */
 .lightbox {
   display: none;
   position: fixed;

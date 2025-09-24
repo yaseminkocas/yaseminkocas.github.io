@@ -7,6 +7,7 @@ const images = [
 
 const gallery = document.getElementById("gallery");
 
+// Create gallery items dynamically
 images.forEach(item => {
   const col = document.createElement("div");
   col.className = "col-sm-6 col-md-4 col-lg-3";
@@ -27,6 +28,7 @@ images.forEach(item => {
   col.appendChild(wrapper);
   gallery.appendChild(col);
 
+  // Click to open lightbox
   wrapper.addEventListener("click", () => {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
@@ -37,14 +39,12 @@ images.forEach(item => {
   });
 });
 
+// Close lightbox
 const lightbox = document.getElementById("lightbox");
 const closeBtn = document.querySelector(".close");
 closeBtn.onclick = () => {
   lightbox.style.display = "none";
 };
-
 lightbox.onclick = (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
-  }
+  if (e.target === lightbox) lightbox.style.display = "none";
 };
