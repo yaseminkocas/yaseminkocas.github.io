@@ -31,10 +31,10 @@
 
     .gallery {
         display: flex;
-  flex-wrap: wrap;    
-  gap: 20px;       
+  flex-wrap: wrap;        
+  gap: 15px;              
+  justify-content: flex-start;
   padding: 40px;
-  justify-content: center; 
   background: #fff;
   color: #333;
     }
@@ -45,8 +45,8 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  flex: 1 1 250px;      
-  max-width: 300px; 
+  flex: 0 1 auto;         
+  height: 200px;
     }
 
     .gallery-item:hover {
@@ -54,20 +54,22 @@
     }
 
     .gallery-item img {
-  width: 100%;          
-  height: auto;          
+       height: 100%;           
+  width: auto;            
   display: block;
+  object-fit: cover;      
   border-radius: 8px;
     }
 
     .caption {
       position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.7);
-      padding: 8px 0;
-      font-size: 0.95em;
-      color: #000;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 0;
+  font-size: 0.95em;
+  color: #000;
+  box-sizing: border-box;
     }
 
     /* Lightbox overlay */
