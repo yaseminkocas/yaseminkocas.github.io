@@ -9,7 +9,7 @@
  * const API_URL = "https://my-playlist-sync.onrender.com";
  */
 
-const API_URL = "YOUR_RENDER_BACKEND_URL";
+const API_URL = "https://yaseminkocas-github-io.onrender.com";
 
 
 async function syncPlaylist() {
