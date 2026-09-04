@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY back/requirements.txt .
 
-RUN pip install --no-cache-dir -r back/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY back/app.py .
 
