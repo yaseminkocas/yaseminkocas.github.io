@@ -8,7 +8,7 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY back/requirements.txt .
 
 RUN pip install --no-cache-dir -r back/requirements.txt
 
