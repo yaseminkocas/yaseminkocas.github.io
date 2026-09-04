@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: playlist-sync-backend
+    runtime: docker
+
+    dockerfilePath: ./backend/Dockerfile
+
+    plan: starter
+
+    healthCheckPath: /health
+
+    envVars:
+      - key: PLAYLIST_URL
+        sync: false
+
+      - key: DATA_DIR
+        value: /var/data
+
+    disk:
+      name: playlist-data
+      mountPath: /var/data
+      sizeGB: 10
