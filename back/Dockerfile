@@ -12,7 +12,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app.py .
+COPY back/app.py .
 
 ENV PORT=10000
 
